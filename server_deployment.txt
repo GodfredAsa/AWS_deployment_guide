@@ -1,0 +1,42 @@
+AWS DEPLOYMENT GUIDE
+
+A. CREATING RDS INSTANCE
+	- search RDS in AWS console
+	- create database
+	- select db instance
+	- select template
+	- set db instance ==> db name 
+
+B. DATABASE OPTIONS
+	- initial db name 
+
+NB: Use the information above in your server/backend configuration in case of spring in the application.yml or application.properties file 
+
+	- In the AWS console, right the db name and copy the endpoint value and replace it with the localhost
+in the setting file of the server/backend
+
+DEPLOYMENT OPTIONS IN AWS
+	- EC2 instance
+	- Elastic Beanstalk (With this change server port to 5000
+
+
+C. DEPLOYING A SPRINGBOOT APPLICATION 
+	- create jar of the application
+	- upload jar of the application
+
+
+DEPLOYMENT USING ELASTIC BEAN STALK
+	- create jar of app
+	- search beanstalk in AWS console
+	- create new environment
+	- select 
+		-- Give app name 
+		-- env name
+		-- domain name if needed
+		-- platform name in case of this study is java
+		-- platform branch  java/8 ...
+
+	- upload the jar of the application created 
+	- configure more options to configure db
+		-- fill db form and save 
+		-- create env and upload the jar

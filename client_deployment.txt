@@ -1,0 +1,21 @@
+DEPLOYMENT OF CLIENT/FRONTEND
+
+- Replace all APIs consumed by client with the deployed version of the server 
+- Build the app (ng build --prod): this study is based on angular client
+- it created a dist directory
+NB: Build projects are hosted in AWS S3 bucket
+
+Search in AWS console 
+- search S3 and create a bucket
+- [] Block all public access or choose desired option 
+- [] Acknowledge any setting click [ CREATE ]
+- Click bucket name 
+- upload dist / drag and drop folder using menu on the left side bar
+	- properties
+	- Edit
+	- Enable
+- index document: index.html
+- env document: index.html
+- save
+- try the URL given 
+- DONE
